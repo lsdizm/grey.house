@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ezcaretech\\Documents\\My Web Sites\\grey.house.api\\grey.house.api.csproj": {}
+    "C:\\project\\grey.house\\grey.house.api\\grey.house.api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ezcaretech\\Documents\\My Web Sites\\grey.house.api\\grey.house.api.csproj": {
+    "C:\\project\\grey.house\\grey.house.api\\grey.house.api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ezcaretech\\Documents\\My Web Sites\\grey.house.api\\grey.house.api.csproj",
+        "projectUniqueName": "C:\\project\\grey.house\\grey.house.api\\grey.house.api.csproj",
         "projectName": "grey.house.api",
-        "projectPath": "C:\\Users\\ezcaretech\\Documents\\My Web Sites\\grey.house.api\\grey.house.api.csproj",
-        "packagesPath": "C:\\Users\\ezcaretech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ezcaretech\\Documents\\My Web Sites\\grey.house.api\\obj\\",
+        "projectPath": "C:\\project\\grey.house\\grey.house.api\\grey.house.api.csproj",
+        "packagesPath": "C:\\Users\\ezcaretech.park.b.c\\.nuget\\packages\\",
+        "outputPath": "C:\\project\\grey.house\\grey.house.api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ezcaretech\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ezcaretech.park.b.c\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://support.c-his.com:9090/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,8 +69,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -74,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.411\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

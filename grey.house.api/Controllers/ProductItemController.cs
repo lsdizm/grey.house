@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace grey.house.api.Controllers;
 
-[Route("services")]
+//[Route("services")]
 public class ProductItemController : ControllerBase
 {
     private readonly ILogger<ProductItemController> _logger;
@@ -13,10 +13,12 @@ public class ProductItemController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "database")]
+    [HttpGet("query", Name = "database")]
     public async Task<List<dynamic>> Get([FromQuery] string sqlId)
     {
         // var parameters = new Dictionary<string, string>();
+        //return new List<dynamic>() {  EnvironmentValue.MySqlPath };
+        
         var result = await SelectAsync<dynamic>(sqlId, null).ConfigureAwait(false);
 
                             
@@ -36,7 +38,7 @@ public class ProductItemController : ControllerBase
         //     Amount = 45
         // });
 
-        return result;
+        return result; 
     }
 
 
@@ -44,9 +46,7 @@ public class ProductItemController : ControllerBase
 
     private MySql.Data.MySqlClient.MySqlConnection Connect()
     {
-
-        var _connectionString = "host=localhost;port=3306;user id=greyhouse;password=greyhouse;database=greyhouse;";
-        return new MySql.Data.MySqlClient.MySqlConnection(_connectionString);
+        return new MySql.Data.MySqlClient.MySqlConnection(EnvironmentValue.ConnectionString);
     }
 
     private async Task<List<T>> SelectAsync<T>(string sqlId, Dictionary<string, string> parameters)

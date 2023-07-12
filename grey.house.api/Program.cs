@@ -59,6 +59,10 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
     ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
 });
 
+
+var configuration = builder.Configuration;
+EnvironmentValue.ConnectionString = configuration.GetSection("server").GetValue<string>("connectionstring");
+
 app.Run();
 
 /*var builder = WebApplication.CreateBuilder(args);
